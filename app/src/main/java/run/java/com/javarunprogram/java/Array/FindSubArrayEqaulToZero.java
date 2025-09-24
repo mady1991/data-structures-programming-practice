@@ -7,7 +7,6 @@ public class FindSubArrayEqaulToZero {
     void findSubArray(int a[]) {
         ArrayList<Integer> sub = new ArrayList<>();
         for (int i = 0; i < a.length; i++) {
-
             int sum = a[i];
             sub.add(a[i]);
             for (int j = i + 1; j < a.length; j++) {
