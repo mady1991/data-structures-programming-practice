@@ -1,34 +1,33 @@
 package run.java.com.javarunprogram.java.Array;
 
+import java.util.Arrays;
+
 public class ZeroOneSeprate {
 
     public int[] sorting(int a[]) {
-        int i = 0;
-        int j = a.length - 1;
+        int low = 0;
+        int high = a.length - 1;
         for (int k = 0; k < a.length; k++) {
+            if (low < high) {
+                if (a[low] > a[high]) {
+                    int temp = a[low];
+                    a[low] = a[high];
+                    a[high] = temp;
 
-            if (a[i] == 1) {
-                int temp = a[i];
-                a[i] = a[j];
-                a[j] = temp;
-                j--;
-
-            } else {
-                i++;
+                }
+                low++;
+                high--;
             }
-
         }
-
-
         return a;
     }
 
     public static void main(String[] args) {
-        int a[]={1,0,1,1,0,0,1,1,0,0,1,0};
-        a=new ZeroOneSeprate().sorting(a);
-       for (int k = 0; k < a.length; k++) {
-           System.out.print(a[k]+" ");
-       }
+        int a[] = {1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0};
+        a = new ZeroOneSeprate().sorting(a);
+
+        System.out.print(Arrays.toString(a));
+
 
     }
 

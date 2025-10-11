@@ -1,5 +1,7 @@
 package run.java.com.javarunprogram.java;
 
+import java.util.Arrays;
+
 public class Swap {
     static int minimumSwaps(int[] arr) {
         int swap = 0;
@@ -19,6 +21,7 @@ public class Swap {
                 swap += cycle - 1;
         }
 
+
         return swap;
     }
 
@@ -26,6 +29,7 @@ public class Swap {
         int[] arr = {7, 1, 3, 2, 4, 5, 6};
         int res = minimumSwaps(arr);
         System.out.println(res);
+
 
     }
 }

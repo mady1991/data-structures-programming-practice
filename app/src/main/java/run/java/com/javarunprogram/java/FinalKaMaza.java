@@ -23,7 +23,7 @@ public class FinalKaMaza extends NonFinal {
     }
 
     public static void main(String[] args) {
-        NonFinal nonFinal = new FinalKaMaza();
+        FinalKaMaza nonFinal = new FinalKaMaza();
         System.out.println(nonFinal.nonfinal);
 
     }

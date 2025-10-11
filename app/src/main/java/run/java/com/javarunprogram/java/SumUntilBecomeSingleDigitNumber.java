@@ -10,7 +10,7 @@ public class SumUntilBecomeSingleDigitNumber {
 
     private static int sumTillSingleDigitNumber(int number) {
         int reminder = getReminder(number);
-        return reminder >= 10 ? getReminder(reminder) : reminder;
+        return getReminder(number);
     }
 
     /*

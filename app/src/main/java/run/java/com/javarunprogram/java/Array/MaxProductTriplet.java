@@ -69,9 +69,6 @@ class MaxProductTriplet {
             System.out.println("No Triplet Exists");
         else
             System.out.println("Maximum product is " + max);
-
-
-
     }
 }
 

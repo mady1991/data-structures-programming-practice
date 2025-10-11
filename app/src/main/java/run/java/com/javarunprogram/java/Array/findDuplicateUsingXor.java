@@ -8,6 +8,7 @@ public class findDuplicateUsingXor {
         // take xor of all array elements
         for (int i = 0; i < A.length; i++) {
             xor ^= A[i];
+
         }
 
         // take xor of numbers from 1 to n-1

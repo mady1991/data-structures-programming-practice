@@ -99,11 +99,11 @@ public class FindMinimumeSubString {
     public static void main(String[] args) {
         FindMinimumeSubString findMinimumeSubString = new FindMinimumeSubString();
         String str = "this is a test string";
-        String pat = "tist";
+        String pat = "a test";
 
-        System.out.print("Smallest window is :\n " +
+        System.out.print("Smallest window is : " +
                 findMinimumeSubString.findMinimum(str, pat));
-        FindMinimumeSubString.comapreChar("Neha", "Narenderh");
+       // FindMinimumeSubString.comapreChar("Neha", "Narenderh");
 
     }
 }

@@ -4,7 +4,7 @@ public class LeastPrimenumberIntoNumber {
 
     public static void main(String[] args) {
 
-        System.out.println(leastPrimeNumbers(3));
+        System.out.println(leastPrimeNumbers(9));
     }
 
     static int oddOrEven = 0;

@@ -1,19 +1,22 @@
 package run.java.com.javarunprogram.java.sorting;
 
+import android.annotation.SuppressLint;
+
+import java.util.Arrays;
+
 public class InsertSort {
 
+    @SuppressLint("NotConstructor")
     public int[] InsertSort(int a[]) {
-
-
         for (int i = 1; i < a.length; i++) {
-            int key = a[i];
-            int j = i - 1;
+            int elemnt = a[i];
+            int index = i - 1;
 
-            while (j >= 0 && a[j] > key) {
-                a[j + 1] = a[j];
-                j = j - 1;
+            while (index >= 0 && a[index] > elemnt) {
+                a[index + 1] = a[index];
+                index--;
             }
-            a[j + 1] = key;
+            a[index + 1] = elemnt;
         }
 
         return a;
@@ -62,7 +65,7 @@ public class InsertSort {
 
         int a[] = {98, 7, 45, 32, 23, 87, 4, 72, 8};
 
-        insertSort.printArray("", insertSort.BubbleSort(a));
+        insertSort.printArray("", insertSort.InsertSort(a));
     }
 
 

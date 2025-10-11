@@ -5,7 +5,7 @@ public class FindFactorialProgram {
     public static void main(String[] args) {
 
 
-        System.out.println(factorial(15, 15));
+        System.out.println(factorialNumber(10));
     }
 
 
@@ -21,6 +21,15 @@ public class FindFactorialProgram {
             return factorial(mainNUmber, number - 1);
         }
 
-
     }
+
+    public static int factorialNumber(int number) {
+        if(number==0 || number==1){
+            return number;
+        }else{
+            return number*factorialNumber(number-1);
+        }
+    }
+
+
 }

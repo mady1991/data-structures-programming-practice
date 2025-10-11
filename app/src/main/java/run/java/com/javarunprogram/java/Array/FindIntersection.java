@@ -13,7 +13,7 @@ public class FindIntersection {
             } else if (firstArr[i] > secondArr[j]) {
                 j++;
             } else {
-                System.out.print(firstArr[i] + " ");
+                System.out.print(secondArr[j] + " ");
                 i++;
                 j++;
             }
@@ -21,8 +21,8 @@ public class FindIntersection {
     }
 
     public static void main(String[] args) {
-        int a[] = {1, 5, 7, 2, 9, 10, 12};
-        int b[] = {2, 6, 4, 11, 10};
+        int a[] = {1, 5, 7, 2, 9, 10, 12,0};
+        int b[] = {2, 6, 4, 11, 10, 0};
         Arrays.sort(a);
         Arrays.sort(b);
 

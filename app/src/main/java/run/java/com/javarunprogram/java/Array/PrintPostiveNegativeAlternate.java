@@ -6,7 +6,7 @@ public class PrintPostiveNegativeAlternate {
     static void printAlter(int a[]) {
         Arrays.sort(a);
         int i;
-        System.out.println(Arrays.toString(a));
+        //System.out.println(Arrays.toString(a));
         for (i = 0; i < a.length; i++) {
             if (a[i] > 0) {
                 break;
@@ -24,11 +24,7 @@ public class PrintPostiveNegativeAlternate {
                 }
             }
         }
-
-
         System.out.println(Arrays.toString(a));
-
-
     }
 
     public static void main(String[] args) {

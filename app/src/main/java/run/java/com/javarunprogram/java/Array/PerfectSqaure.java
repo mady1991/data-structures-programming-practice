@@ -10,6 +10,7 @@ public class PerfectSqaure {
     boolean squre(int a, int b) {
         int sum = a + b;
         int mid = sum / 2;
+        System.out.println(mid);
         for (int i = 2; i <= mid; i++) {
             int square = i * i;
             if (square == sum) {
@@ -40,18 +41,20 @@ public class PerfectSqaure {
 
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String s=scan.next();
-        double d=scan.nextDouble();
-        Integer i = scan.nextInt();
+//        Scanner scan = new Scanner(System.in);
+//        String s=scan.next();
+//        double d=scan.nextDouble();
+//        Integer i = scan.nextInt();
+//
+//
+//        // Write your code here.
+//
+//        System.out.println("String: " + "Welcome to HackerRank's Java tutorials!");
+//        System.out.println("Double: " + d);
+//        System.out.println("Int: " + i);
 
+       boolean answer= new PerfectSqaure().squre(40,9);
 
-        // Write your code here.
-
-        System.out.println("String: " + "Welcome to HackerRank's Java tutorials!");
-        System.out.println("Double: " + d);
-        System.out.println("Int: " + i);
-
-
+        System.out.println(answer);
     }
 }

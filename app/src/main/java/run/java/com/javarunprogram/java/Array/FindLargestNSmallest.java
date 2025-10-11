@@ -21,7 +21,7 @@ public class FindLargestNSmallest {
     }
 
     public static void main(String[] args) {
-        int a[] = {2, 8, -1, 89, 3, 23, 7, 12, 4, 6};
+        int a[] = {2, 8, 0, 89, 3, 23, 7, 12, 4, 6};
         new FindLargestNSmallest().largeNSmall(a);
     }
 }

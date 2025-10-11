@@ -1,32 +1,38 @@
-package run.java.com.javarunprogram.java.Array;
+package run.java.com.javarunprogram;
 
 import java.util.Arrays;
 
-public class MergeTwoSortedArray {
+public class HH {
     public static void main(String[] args) {
-        int a[] = {23, 12, 1, 45, 56};
-        int b[] = {0, 8, 56, 4, 9, 4, 3, 6, 2};
-        int c[] = new int[a.length + b.length];
+        int a[] = {1, 2, 3, 0, 0, 0};
+        int b[] = {2, 5, 6};
+        int m = 3;
+        int n = 3;
+        int c[] = new int[m + n];
+
         int i = 0;
         int j = 0;
         int k = 0;
-        Arrays.sort(a);
-        Arrays.sort(b);
 
-        while (i < a.length && j < b.length) {
+        while (i < m && j < n) {
             if (a[i] < b[j]) {
                 c[k++] = a[i++];
             } else {
                 c[k++] = b[j++];
             }
         }
-        while (i < a.length) {
+        while (i < m) {
             c[k++] = a[i++];
         }
-        while (j < b.length) {
+        while (j < n) {
             c[k++] = b[j++];
         }
 
         System.out.println(Arrays.toString(c));
+
     }
+
 }
+
+
+
