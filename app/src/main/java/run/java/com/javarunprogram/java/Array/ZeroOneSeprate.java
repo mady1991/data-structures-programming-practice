@@ -5,19 +5,15 @@ import java.util.Arrays;
 public class ZeroOneSeprate {
 
     public int[] sorting(int a[]) {
-        int low = 0;
-        int high = a.length - 1;
+       int index=0;
         for (int k = 0; k < a.length; k++) {
-            if (low < high) {
-                if (a[low] > a[high]) {
-                    int temp = a[low];
-                    a[low] = a[high];
-                    a[high] = temp;
-
-                }
-                low++;
-                high--;
+            if(a[k]==0){
+                int temp =a[k];
+                a[k]=a[index];
+                a[index]=temp;
+                index++;
             }
+
         }
         return a;
     }

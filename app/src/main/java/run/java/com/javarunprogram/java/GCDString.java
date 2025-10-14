@@ -2,9 +2,9 @@ package run.java.com.javarunprogram.java;
 
 public class GCDString {
     public static void main(String[] args) {
-//        String str1 = "ABABAB";
-//        String str2 = "ABAB";
-        String str1 = "LEET", str2 = "CODE";
+        String str1 = "ABABAB";
+        String str2 = "ABAB";
+       // String str1 = "LEET", str2 = "CODE";
         System.out.println(gcdString(str1, str2));
 
     }

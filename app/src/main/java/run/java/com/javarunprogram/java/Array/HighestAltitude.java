@@ -8,7 +8,7 @@ public class HighestAltitude {
         int altitude = 0;
         int maxAltitude = 0;
 
-        for (int g : gain1) {
+        for (int g : gain2) {
             altitude += g;
             maxAltitude = Math.max(maxAltitude, altitude);
         }

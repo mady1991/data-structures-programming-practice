@@ -7,18 +7,16 @@ public class FindPairsToSum {
     void findPair(int a[], int sum) {
         int low = 0;
         int high = a.length - 1;
-        for (int i = 0; i < a.length; i++) {
-
+        while (low < high) {
             if (a[low] + a[high] == sum) {
-                System.out.println("pairs are " + a[low] + "," + a[high]);
-            }
-
-            if (a[low] + a[high] < sum) {
+                System.out.println("pair " + a[low] + " " + a[high]);
+                low++;
+                high--;
+            } else if (a[low] + a[high] < sum) {
                 low++;
             } else {
                 high--;
             }
-
         }
     }
 

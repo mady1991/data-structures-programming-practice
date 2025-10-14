@@ -8,13 +8,10 @@ public class RemoveElementsFromArray {
     public static void main(String[] args) {
         int a[] = {3, 2, 2, 3};
         int num = 3;
-        int count = 0;
 
         for (int i = 0; i < a.length; i++) {
             if (a[i] == num && (a[i] ^ num) == 0) {
                 a[i] = -1;
-            } else {
-                count++;
             }
         }
 

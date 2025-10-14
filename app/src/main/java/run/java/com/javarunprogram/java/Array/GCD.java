@@ -15,13 +15,10 @@ class GCD {
     /* Driver program to test above function */
     public static void main(String[] args) {
 
-        System.out.println(gcd(20,28));
         int arr[] = {1, 2, 4, 8, 8, 12};
         int gcd = 0;
         for (int i = 0; i < arr.length - 1; i++) {
-            int gc = gcd(gcd, arr[i]);
-
-            gcd = gcd + gc;
+            gcd += gcd(gcd, arr[i]);
         }
         System.out.println(gcd);
 

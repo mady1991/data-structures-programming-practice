@@ -18,24 +18,26 @@ public class MaximumNumberofVowelsinaSubstringofGivenLength {
     private static int maxVowels(String s, int k) {
 
         String vowels = "aeiouAEIOU";
-        int maxCount = 0, currentCount = 0;
+        int maxCount = 0, vowel = 0;
+        int left = 0;
+        for (int right = 0; right < s.length(); right++) {
+            if (vowels.contains(String.valueOf(s.charAt(right)))) {
+                vowel++;
+            }
 
-        // first window
-        for (int i = 0; i < k && i < s.length(); i++) {
-            if (vowels.contains(String.valueOf(s.charAt(i))))
-                currentCount++;
+            while (vowel > k) {
+                if (vowels.contains(String.valueOf(s.charAt(left))))
+                    vowel--;
+                left++;
+            }
+
+            if (vowel > maxCount)
+                maxCount = vowel;
+
         }
-        maxCount = currentCount;
-
-        // sliding window
-        for (int i = k; i < s.length(); i++) {
-            if (vowels.contains(String.valueOf(s.charAt(i))))
-                currentCount++;
-            if (vowels.contains(String.valueOf(s.charAt(i - k))))
-                currentCount--;
-            maxCount = Math.max(maxCount, currentCount);
-        }
-
         return maxCount;
+
     }
+
+
 }

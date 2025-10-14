@@ -4,8 +4,8 @@ public class MaxNumberKSumPairs {
     public static void main(String[] args) {
         //Input: nums = [1,2,3,4], k = 5
         //Output: 2
-        int a[] = {1, 2, 3, 4};
-        //int a[] = {3, 1, 3, 4, 3};
+        //int a[] = {1, 2, 3, 4};
+        int a[] = {3, 1, 3, 4, 3};
         int k = 5;
         int low = 0;
         int high = a.length - 1;

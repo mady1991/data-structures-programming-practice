@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class GGGG {
+public class Anagram {
 
     public List<String> funWithAnagrams(List<String> s) {
 
@@ -50,7 +50,7 @@ public class GGGG {
         s.add("moni");
         s.add("nomi");
 
-        System.out.println(new GGGG().funWithAnagrams(s));
+        System.out.println(new Anagram().funWithAnagrams(s));
 
     }
 

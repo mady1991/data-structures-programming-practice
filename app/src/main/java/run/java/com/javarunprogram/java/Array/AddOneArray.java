@@ -46,7 +46,7 @@ public class AddOneArray {
 
 
     public static void main(String[] args) {
-        int a[] = {9, 9, 1, 9};
+        int a[] = {9, 9, 9, 9};
         new AddOneArray().addOne(a);
     }
 }

@@ -29,7 +29,31 @@ public class PrintPostiveNegativeAlternate {
 
     public static void main(String[] args) {
         int a[] = {-5, -2, 5, 2, 4, 7, 1, 8, -8};
-        printAlter(a);
+
+        int index = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] < 0) {
+                int t = a[i];
+                a[i] = a[index];
+                a[index] = t;
+                index++;
+            }
+
+        }
+        System.out.println(Arrays.toString(a));
+
+        for (int i = 0; i < a.length ; i++) {
+            if (a[i] < 0 && a[index] > 0) {
+                int temp = a[i+1];
+                a[i+1] = a[index+1];
+                a[index+1] = temp;
+                index++;
+            }
+
+        }
+
+
+        System.out.println(Arrays.toString(a));
 
     }
 }
