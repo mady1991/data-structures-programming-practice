@@ -1,5 +1,7 @@
 package run.java.com.javarunprogram.java;
 
+import java.util.Arrays;
+
 public class RemoveDuplicateItems {
     public static void main(String[] args) {
         int a[] = {1, 2, 2, 2, 3, 3, 3};
@@ -10,8 +12,6 @@ public class RemoveDuplicateItems {
                 a[i] = 0;
             }
         }
-        for (int i : a) {
-            System.out.print(i + " ");
-        }
+        System.out.println(Arrays.toString(a));
     }
 }

@@ -12,7 +12,7 @@ class SecondAcivity : Activity() {
         setContentView(R.layout.main)
 
         val bundle = intent.extras
-        Toast.makeText(this, bundle.get("AB").toString(), Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, bundle?.get("AB").toString(), Toast.LENGTH_SHORT).show()
 
     }
 }

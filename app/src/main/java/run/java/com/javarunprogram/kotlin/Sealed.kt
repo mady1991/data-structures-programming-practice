@@ -10,10 +10,10 @@ sealed class Shape<T>(age: T) {
     init {
         this.age = age
         when (age) {
-            age is Short -> println("Short")
-            age is Int -> println("Int")
-            age is Boolean -> println("Boolean")
-            age is String -> println("String")
+            (age is Short) -> println("Short")
+            (age is Int) -> println("Int")
+            (age is Boolean) -> println("Boolean")
+            (age is String) -> println("String")
             else -> println("Koi Type nhi hai")
 
         }

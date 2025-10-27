@@ -11,12 +11,13 @@ public class RotateArray {
         //Input: nums = [-1,-100,3,99], k = 2
         //Output: [3,99,-1,-100]
         RotateArray ra = new RotateArray();
-        int a[] = {-1, -100, 3, 99};
+        int a[] = {1, 2, 3, 4, 5};
         int step = 2;
 
+        step = a.length - 1 - step;
         ra.sort(a, 0, a.length - 1);
-        ra.sort(a, 0, step - 1);
-        ra.sort(a, step, a.length - 1);
+        ra.sort(a, 0, step);
+        ra.sort(a, step + 1, a.length - 1);
 
 
         System.out.println(Arrays.toString(a));

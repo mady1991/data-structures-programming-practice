@@ -1,6 +1,8 @@
 package run.java.com.javarunprogram.kotlin
 
 import java.util.*
+import java.util.Locale
+import java.util.Locale.getDefault
 
 fun printKaro(value: String) {
     println(value)
@@ -39,7 +41,7 @@ fun whenWithRange() {
 fun whenMultipleBranches() {
     printKaro("Please enter name of the charcter of Ramayan, Mahabharat & DDLJ ")
     val charchter = readLine().toString();
-    when (charchter.toLowerCase()) {
+    when (charchter.lowercase(getDefault())) {
         "ram", "sita", "laxman", "bharat" -> printKaro("RAMAYAN")
         "arjun", "bhim", "duryodhan", "nakul", "bharat" -> printKaro("MAHABHARAT")
         "babuji", "simran", "rahul" -> printKaro("DDLJ")
@@ -92,7 +94,7 @@ fun whenWithExpression() {
     printKaro("Please Enter the value between One to Four to convert String to Int")
     val value = scanner.next()
 
-    val argument = when (value.toLowerCase()) {
+    val argument = when (value.lowercase(getDefault())) {
         "one" -> 1
         "two" -> 2
         "three" -> 3
